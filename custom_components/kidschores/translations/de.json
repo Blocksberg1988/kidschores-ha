@@ -260,8 +260,8 @@
       "invalid_parent_count": "Ungültige Anzahl von Eltern",
       "invalid_parent_name": "Ungültiger Name des Elternteils",
       "invalid_penalty": "Ungültige Sanktion",
-      "invalid_penalty_count": "Ungültige Anzahl von Strafen",
-      "invalid_penalty_name": "Ungültiger Strafename",
+      "invalid_penalty_count": "Ungültige Anzahl von Sanktion",
+      "invalid_penalty_name": "Ungültiger Sanktionsname",
       "invalid_reward": "Ungültige Belohnung",
       "invalid_reward_count": "Ungültige Anzahl von Belohnungen",
       "invalid_reward_name": "Ungültiger Belohnungsname",
@@ -486,8 +486,8 @@
         }
       },
       "add_penalty": {
-        "title": "Strafe hinzufügen",
-        "description": "Geben Sie Details für die neue Strafe ein.",
+        "title": "Sanktion löschen",
+        "description": "Geben Sie Details für die neue Sanktionen ein.",
         "data": {
           "penalty_name": "Name der Sanktion",
           "penalty_description": "Beschreibung (optional)",
@@ -767,7 +767,7 @@
       "duplicate_chore": "Eine Hausarbeit mit diesem Namen existiert bereits",
       "duplicate_kid": "Ein Kind mit diesem Namen existiert bereits",
       "duplicate_parent": "Ein Elternteil mit diesem Namen existiert bereits",
-      "duplicate_penalty": "Eine Strafe mit diesem Namen existiert bereits",
+      "duplicate_penalty": "Eine Sanktion mit diesem Namen existiert bereits.",
       "duplicate_reward": "Eine Belohnung mit diesem Namen existiert bereits",
       "duplicate_bonus": "Ein Bonus mit diesem Namen existiert bereits",
       "due_date_in_past": "Das Fälligkeitsdatum muss in der Zukunft liegen.",
@@ -799,7 +799,7 @@
       "invalid_entity": "Ungültige Entität",
       "invalid_kid": "Ungültiges Kind",
       "invalid_parent": "Ungültiger Elternteil",
-      "invalid_penalty": "Ungültige Strafe",
+      "invalid_penalty": "Ungültige Sanktion",
       "invalid_reward": "Ungültige Belohnung",
       "invalid_bonus": "Ungültiger Bonus",
       "no_kid": "Keine Kinder konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
@@ -1046,22 +1046,22 @@
       }
     },
     "apply_penalty": {
-      "name": "Strafe anwenden",
-      "description": "Ein Elternteil wendet eine Strafe an, um Punkte abzuziehen.",
+      "name": "Sanktionen zurücksetzen",
+      "description": "Ein Elternteil wendet eine Sanktion an, um Punkte abzuziehen.",
       "fields": {
         "parent_name": {
           "name": "Name des Elternteils",
-          "description": "Der Elternteil, der die Strafe verhängt.",
+          "description": "Der Elternteil, der die Sanktion verhängt.",
           "example": "Papa"
         },
         "kid_name": {
           "name": "Kind Name",
-          "description": "Das Kind, das die Strafe erhält.",
+          "description": "Das Kind, das die Sanktion erhält.",
           "example": "Alice"
         },
         "penalty_name": {
-          "name": "Name der Strafe",
-          "description": "Die Bezeichnung der anzuwendenden Strafe.",
+          "name": "Name der Sanktion",
+          "description": "Die Bezeichnung der anzuwendenden Sanktion.",
           "example": "Schreien"
         }
       }
@@ -1150,7 +1150,7 @@
     },
     "reset_penalties": {
       "name": "Sanktionen zurücksetzen",
-      "description": "Setzt alle angewendeten Sanktionen für alle Kinder zurück. Optional kann penalty_name angegeben werden, um eine bestimmte Sanktion für alle Kinder zurückzusetzen. Verwenden Sie kid_name, um Strafen für ein bestimmtes Kind zurückzusetzen. Durch Kombinieren beider Angaben kann eine bestimmte Sanktion für ein bestimmtes Kind zurückgesetzt werden.",
+      "description": "Setzt alle angewendeten Sanktionen für alle Kinder zurück. Optional kann penalty_name angegeben werden, um eine bestimmte Sanktion für alle Kinder zurückzusetzen. Verwenden Sie kid_name, um Sanktionen für ein bestimmtes Kind zurückzusetzen. Durch Kombinieren beider Angaben kann eine bestimmte Sanktion für ein bestimmtes Kind zurückgesetzt werden.",
       "fields": {
         "kid_name": {
           "name": "Kind Name",
@@ -1158,7 +1158,7 @@
           "example": "Alice"
         },
         "penalty_name": {
-          "name": "Strafenname",
+          "name": "Sanktionsname",
           "description": "Der Name der zurückzusetzenden Ssanktion.",
           "example": "Schreien"
         }
@@ -1559,19 +1559,19 @@
         "name": "{kid_name} - Genehmigungen - {chore_name}"
       },
       "penalty_applies_sensor": {
-        "name": "{kid_name} - Angewandte Strafen - {penalty_name}",
+        "name": "{kid_name} - Angewandte Sanktion - {penalty_name}",
         "state_attributes": {
           "kid_name": {
             "name": "Kind Name"
           },
           "penalty_name": {
-            "name": "Name der Strafe"
+            "name": "Name der Sanktion"
           },
           "description": {
             "name": "Beschreibung"
           },
           "penalty_points": {
-            "name": "Strafpunkte"
+            "name": "Sanktionspunkte"
           },
           "labels": {
             "name": "Etiketten"
@@ -1861,7 +1861,7 @@
         }
       },
       "penalty_button": {
-        "name": "{kid_name} - Strafe anwenden - {penalty_name}",
+        "name": "{kid_name} - Sanktion anwenden - {penalty_name}",
         "state_attributes": {
           "labels": {
             "name": "Etiketten"
