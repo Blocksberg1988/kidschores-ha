@@ -7,8 +7,8 @@
         "description": "Dieser Assistent führt Sie durch die Einrichtung von KidsChores."
       },
       "points_label": {
-        "title": "Punkte-Etikett",
-        "description": "Wählen Sie eine Bezeichnung und ein Symbol für die Punkte.",
+        "title": "Belohnungspunkte",
+        "description": "Wählen Sie eine Bezeichnung und ein Symbol für die Belohnungspunkte.",
         "data": {
           "points_label": "Punkte-Etikett",
           "points_icon": "Punkte-Symbol"
@@ -67,8 +67,8 @@
           "chore_name": "Name der Hausarbeit",
           "internal_id": "Interne ID",
           "default_points": "Standard-Punkte",
-          "allow_multiple_claims_per_day": "Mehrere Ansprüche pro Tag zulassen?",
-          "partial_allowed": "Partielle Punkte zulassen?",
+          "allow_multiple_claims_per_day": "Mehrere Aufgaben pro Tag zulassen?",
+          "partial_allowed": "anteilige Punkte zulassen?",
           "shared_chore": "Geteilte Hausarbeit?",
           "assigned_kids": "Zugewiesene Kinder",
           "chore_description": "Beschreibung (optional)",
@@ -76,7 +76,7 @@
           "icon": "Symbol (mdi:xxx)",
           "recurring_frequency": "Wiederkehrende Häufigkeit",
           "custom_interval": "Benutzerdefiniertes Intervall (nur verwenden, wenn benutzerdefinierte Häufigkeit gewählt ist)",
-          "custom_interval_unit": "Benutzerdefinierte wiederkehrende Periodizität",
+          "custom_interval_unit": "Benutzerdefinierte wiederkehrende Termine",
           "applicable_days": "Anwendbare Tage",
           "due_date": "Fälligkeitsdatum",
           "notify_on_claim": "Bei Anspruch benachrichtigen",
@@ -112,7 +112,7 @@
           "internal_id": "Interne ID"
         },
         "data_description": {
-          "custom_reset_date": "Definieren Sie ein benutzerdefiniertes Zurücksetzdatum, wenn der Reset-Typ auf Benutzerdefiniert gesetzt ist.",
+          "custom_reset_date": "Definieren Sie ein benutzerdefiniertes Rücksetzdatum, wenn der Reset-Typ auf Benutzerdefiniert gesetzt ist.",
           "reset_grace_period": "Geben Sie die Schonfrist in TAGEN an, in denen die Kinder das Abzeichen behalten können, falls sie \ndie Mindestaufrechterhaltungspunkte in diesem Zeitraum erreichen.",
           "maintenance_rules": "Punktzahl, die während der Schonfrist erreicht werden muss, um das Abzeichen zu behalten."
         }
@@ -130,28 +130,28 @@
         "data": {
           "reward_name": "Name der Belohnung",
           "internal_id": "Interne ID",
-          "reward_cost": "Kosten der Belohnung",
+          "reward_cost": "Abzug Punkte der Belohnung",
           "reward_description": "Beschreibung (optional)",
           "reward_labels": "Belohnungsetiketten",
           "icon": "Symbol (mdi:xxx)"
         }
       },
       "penalty_count": {
-        "title": "Anzahl der Strafen",
-        "description": "Wie viele Strafen möchten Sie definieren?",
+        "title": "Anzahl der Sanktionen",
+        "description": "Wie viele Sanktionen möchten Sie definieren?",
         "data": {
-          "penalty_count": "Anzahl der Strafen"
+          "penalty_count": "Anzahl der Sanktionen"
         }
       },
       "penalties": {
-        "title": "Strafe definieren",
-        "description": "Geben Sie für jede Strafe die Details ein.",
+        "title": "Sanktionen definieren",
+        "description": "Geben Sie für jede Sanktion die Details ein.",
         "data": {
-          "penalty_name": "Name der Strafe",
+          "penalty_name": "Name der Sanktion",
           "penalty_description": "Beschreibung (optional)",
-          "penalty_labels": "Strafe-Etiketten",
+          "penalty_labels": "Sanktion-Etiketten",
           "internal_id": "Interne ID",
-          "penalty_points": "Strafpunkte (negativ)",
+          "penalty_points": "Sanktionspunkte (negativ)",
           "icon": "Symbol (mdi:xxx)"
         }
       },
@@ -237,7 +237,7 @@
       "duplicate_chore": "Eine Hausarbeit mit diesem Namen existiert bereits.",
       "duplicate_kid": "Ein Kind mit diesem Namen existiert bereits.",
       "duplicate_parent": "Ein Elternteil mit diesem Namen existiert bereits.",
-      "duplicate_penalty": "Eine Strafe mit diesem Namen existiert bereits.",
+      "duplicate_penalty": "Eine Sanktion mit diesem Namen existiert bereits.",
       "duplicate_reward": "Eine Belohnung mit diesem Namen existiert bereits.",
       "duplicate_bonus": "Ein Bonus mit diesem Namen existiert bereits.",
       "due_date_in_past": "Das Fälligkeitsdatum muss in der Zukunft liegen.",
@@ -259,7 +259,7 @@
       "invalid_kid_name": "Ungültiger Kindername",
       "invalid_parent_count": "Ungültige Anzahl von Eltern",
       "invalid_parent_name": "Ungültiger Name des Elternteils",
-      "invalid_penalty": "Ungültige Strafe",
+      "invalid_penalty": "Ungültige Sanktion",
       "invalid_penalty_count": "Ungültige Anzahl von Strafen",
       "invalid_penalty_name": "Ungültiger Strafename",
       "invalid_reward": "Ungültige Belohnung",
@@ -279,7 +279,7 @@
     "step": {
       "init": {
         "title": "KinderChores Optionen",
-        "description": "Verwalten Sie Kinder, Hausarbeiten, Abzeichen, Belohnungen, Strafen, Boni oder schließen Sie ab.",
+        "description": "Verwalten Sie Kinder, Hausarbeiten, Abzeichen, Belohnungen, Sanktionen, Boni oder schließen Sie ab.",
         "data": {
           "menu_selection": "Wählen Sie eine Option"
         }
@@ -338,8 +338,8 @@
           "chore_name": "Name der Hausarbeit",
           "internal_id": "Interne ID",
           "default_points": "Standard-Punkte",
-          "allow_multiple_claims_per_day": "Mehrere Ansprüche pro Tag zulassen?",
-          "partial_allowed": "Partielle Punkte zulassen?",
+          "allow_multiple_claims_per_day": "Mehrere Aufgaben pro Tag zulassen?",
+          "partial_allowed": "anteilige Punkte zulassen?",
           "shared_chore": "Geteilte Hausarbeit?",
           "assigned_kids": "Zugewiesene Kinder",
           "chore_description": "Beschreibung (optional)",
@@ -489,11 +489,11 @@
         "title": "Strafe hinzufügen",
         "description": "Geben Sie Details für die neue Strafe ein.",
         "data": {
-          "penalty_name": "Name der Strafe",
+          "penalty_name": "Name der Sanktion",
           "penalty_description": "Beschreibung (optional)",
-          "penalty_labels": "Strafe-Etiketten",
+          "penalty_labels": "Sanktion-Etiketten",
           "internal_id": "Interne ID",
-          "penalty_points": "Strafpunkte (negativ)",
+          "penalty_points": "Sanktionspunkte (negativ)",
           "icon": "Symbol (mdi:xxx)"
         }
       },
@@ -578,7 +578,7 @@
           "internal_id": "Interne ID",
           "default_points": "Standard-Punkte",
           "allow_multiple_claims_per_day": "Mehrere Ansprüche pro Tag zulassen?",
-          "partial_allowed": "Partielle Punkte zulassen?",
+          "partial_allowed": "geteilte Punkte zulassen?",
           "shared_chore": "Geteilte Hausarbeit?",
           "assigned_kids": "Zugewiesene Kinder",
           "chore_description": "Beschreibung (optional)",
@@ -640,14 +640,14 @@
         }
       },
       "edit_penalty": {
-        "title": "Strafe bearbeiten",
-        "description": "Bearbeiten Sie die Angaben zur ausgewählten Strafe.",
+        "title": "Sanktionen definieren",
+        "description": "Bearbeiten Sie die Angaben zur ausgewählten Sanktion.",
         "data": {
-          "penalty_name": "Name der Strafe",
+          "penalty_name": "Name der Sanktion",
           "penalty_description": "Beschreibung (optional)",
-          "penalty_labels": "Strafe-Etiketten",
+          "penalty_labels": "Sanktions-Etiketten",
           "internal_id": "Interne ID",
-          "penalty_points": "Strafpunkte (negativ)",
+          "penalty_points": "Sanktionspunkte (negativ)",
           "icon": "Symbol (mdi:xxx)"
         }
       },
@@ -725,8 +725,8 @@
         "data": {}
       },
       "delete_penalty": {
-        "title": "Strafe löschen",
-        "description": "Sind Sie sicher, dass Sie die Strafe {penalty_name} löschen möchten?",
+        "title": "Sanktion löschen",
+        "description": "Sind Sie sicher, dass Sie die Sanktion {penalty_name} löschen möchten?",
         "data": {}
       },
       "delete_bonus": {
@@ -781,8 +781,8 @@
       "invalid_end_date": "Ungültiges Enddatum.",
       "invalid_kid_count": "Ungültige Anzahl von Kindern",
       "invalid_kid_name": "Ungültiger Kindername",
-      "invalid_penalty": "Ungültige Strafe",
-      "invalid_penalty_count": "Ungültige Anzahl von Strafen",
+      "invalid_penalty": "Ungültige Sanktion",
+      "invalid_penalty_count": "Ungültige Anzahl von Sanktion",
       "invalid_bonus": "Ungültiger Bonus",
       "invalid_bonus_count": "Ungültige Anzahl von Boni",
       "invalid_reward": "Ungültige Belohnung",
@@ -807,7 +807,7 @@
       "no_chore": "Keine Hausarbeiten konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
       "no_badge": "Keine Abzeichen konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
       "no_reward": "Keine Belohnungen konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
-      "no_penalty": "Keine Strafen konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
+      "no_penalty": "Keine Sanktionen konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
       "no_bonus": "Keine Boni konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
       "no_achievement": "Keine Errungenschaften konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
       "no_challenge": "Keine Herausforderungen konfiguriert. Bitte fügen Sie zuerst einen Eintrag hinzu.",
@@ -823,7 +823,7 @@
         "manage_chore": "Hausarbeit verwalten",
         "manage_badge": "Abzeichen verwalten",
         "manage_reward": "Belohnung verwalten",
-        "manage_penalty": "Strafe verwalten",
+        "manage_penalty": "Sanktionen verwalten",
         "manage_bonus": "Bonus verwalten",
         "manage_achievement": "Errungenschaft verwalten",
         "manage_challenge": "Herausforderung verwalten",
@@ -1149,17 +1149,17 @@
       }
     },
     "reset_penalties": {
-      "name": "Strafen zurücksetzen",
-      "description": "Setzt alle angewendeten Strafen für alle Kinder zurück. Optional kann penalty_name angegeben werden, um eine bestimmte Strafe für alle Kinder zurückzusetzen. Verwenden Sie kid_name, um Strafen für ein bestimmtes Kind zurückzusetzen. Durch Kombinieren beider Angaben kann eine bestimmte Strafe für ein bestimmtes Kind zurückgesetzt werden.",
+      "name": "Sanktionen zurücksetzen",
+      "description": "Setzt alle angewendeten Sanktionen für alle Kinder zurück. Optional kann penalty_name angegeben werden, um eine bestimmte Sanktion für alle Kinder zurückzusetzen. Verwenden Sie kid_name, um Strafen für ein bestimmtes Kind zurückzusetzen. Durch Kombinieren beider Angaben kann eine bestimmte Sanktion für ein bestimmtes Kind zurückgesetzt werden.",
       "fields": {
         "kid_name": {
           "name": "Kind Name",
-          "description": "Das Kind, für das Strafen zurückgesetzt werden sollen.",
+          "description": "Das Kind, für das Sanktionen zurückgesetzt werden sollen.",
           "example": "Alice"
         },
         "penalty_name": {
           "name": "Strafenname",
-          "description": "Der Name der zurückzusetzenden Strafe.",
+          "description": "Der Name der zurückzusetzenden Ssanktion.",
           "example": "Schreien"
         }
       }
@@ -1202,7 +1202,7 @@
       "chore_status_sensor": {
         "name": "{kid_name} - Status - {chore_name}",
         "state": {
-          "pending": "Anhängig",
+          "pending": "Unerledigt",
           "approved": "Genehmigt",
           "claimed": "Beansprucht",
           "overdue": "Überfällig",
@@ -1291,7 +1291,7 @@
             }
           },
           "allow_multiple_claims_per_day": {
-            "name": "Mehrere Ansprüche pro Tag zulassen",
+            "name": "Mehrere Aufgaben pro Tag zulassen",
             "state": {
               "true": "Ja",
               "false": "Nein"
@@ -1448,7 +1448,7 @@
       "shared_chore_global_status_sensor": {
         "name": "{chore_name} - Globaler Status",
         "state": {
-          "pending": "Anhängig",
+          "pending": "Unerledigt",
           "approved": "Genehmigt",
           "claimed": "Beansprucht",
           "overdue": "Überfällig",
